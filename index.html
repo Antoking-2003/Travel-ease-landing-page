@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trave-Ease</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-3">
+                        <a class="nav-link active " href="#">TravelEase</a>
+                        <div class="d-flex gap-4">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#About">About</a>
+                            <a class="nav-link active" href="#">packages</a>
+                            <a class="nav-link active " href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="main">
+            <div class="container">
+                <h1 class="text-center mt-4">Welcome to Travel-Ease</h1>
+                <p class="text-center">We provide all travel packages.</p>
+                <button type="button" class="btn btn-dark btn-lg ">View packages</button>
+            </div>
+        </section>
+    </header>
+    <article id="card">
+        <center>
+            <h4 class="mt-5 text-center">Our packages</h4>
+            <div class=" container row row-cols-1 row-cols-md-3 g-5 mt-2 d-flex">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg"
+                            class="card-img-top" alt="img" height="280px">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala – “God’s Own Country”</h5>
+                            <p class="card-text">✔ Ideal for: Nature lovers, couples, family trips
+                                ✔ Best Time: September – March
+                                ✨ Package 1: Munnar – Alleppey – Kochi (3 Nights / 4 Days)
+
+                                Price Range: ₹9,500 – ₹15,000 per person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand.jpg"
+                            class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa – Beaches & Parties</h5>
+                            <p class="card-text">✔ Ideal for: Friends, couples, solo travelers
+                                ✔ Best Time: November – February
+                                ✨ Package 3: North Goa (3 Nights / 4 Days)
+
+                                Price Range: ₹8,000 – ₹14,000 per person</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/beach.jpg" class="card-img-top" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Andaman – Port Blair & Havelock</h5>
+                            <p class="card-text">✔ Ideal for: Beach lovers, honeymoon trips
+                                ✔ Best Time: October – March
+                                ✨ Package 5: Andaman Islands (4 Nights / 5 Days)
+
+                                Price Range: ₹24,000 – ₹35,000 per person</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </article>
+
+    <section class="connect my-5 w-100 ">
+        <h2 class="my-3">Contact Us</h2>
+        <div id="contact">
+            <input type="text" id="name" placeholder="Name" required>
+            <p id="nameAlert"></p>
+
+            <input type="text" id="mail" placeholder="Email id" required>
+            <p id="mailAlert"></p>
+
+            <input type="text" id="subject" placeholder="subject" required>
+            <p id="subjectAlert"></p>
+
+            <textarea rows="5" cols="23" name="message" id="message" placeholder="Message"></textarea>
+            <p id="messageAlert"></p>
+
+            <button class="btn btn-primary" onclick="validate()">Submit</button>
+        </div>
+
+    </section>
+
+    
+    <section class="about-travel">
+    <div class="travel-container">
+
+        <div class="travel-text text-center m-5 p-3 border rounded" border="dark" >
+            <h4>About Our Travel Agency</h4>
+            <p>
+                We are a trusted travel agency offering affordable and customized holiday packages 
+                across India and abroad. From romantic honeymoon destinations to thrilling adventure 
+                trips, we design journeys that create unforgettable memories.
+            </p>
+
+            <p>
+                With experienced tour planners, 24/7 support, and curated travel experiences, 
+                we ensure a smooth and safe journey for every customer.
+            </p>
+        </div>    
+
+    <footer class="py-3 bg-dark">
+        <P>&copy; All Rights Reserved By Travel-Ease</P>
+        <p>2025 | travel@easegmail.com | Follow Us On : Instagram | Facebook</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+
+    <script>
+        function validate() {
+            let name = document.getElementById("name").value.trim();
+            let mail = document.getElementById("mail").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            let nameAlert = document.getElementById("nameAlert");
+            let mailAlert = document.getElementById("mailAlert");
+            let subjectAlert = document.getElementById("subjectAlert");
+            let messageAlert = document.getElementById("messageAlert");
+
+            let re = /^[A-Za-z0-9./_%]+@[A-Za-z0-9]+\.[A-Za-z]{2,}$/
+
+            if (!name || !mail || !subject || !message) {
+                alert("Fill all the fields");
+            }
+            else {
+                if (name.length <= 2) {
+                    nameAlert.textContent = "Name can't be this shorter";
+                }
+                else {
+                    nameAlert.textContent = "Looks Good ✔ ";
+                    nameAlert.style.color = "green";
+
+                }
+                if (re.test(mail) === false) {
+                    mailAlert.textContent = "Enter a valid email id";
+                }
+                else {
+                    mailAlert.textContent = "Looks Good ✔";
+                    mailAlert.style.color = "green";
+                }
+                if (subject.length < 5) {
+                    subjectAlert.textContent = "Subject should have atleast 5 characters";
+                }
+                else {
+                    subjectAlert.textContent = "Looks Good ✔";
+                    subjectAlert.style.color = "green";
+                }
+                if (message.length < 20) {
+                    messageAlert.textContent = "Message should have atleast 20 Characters";
+                }
+                else {
+                    messageAlert.textContent = "Looks Good ✔";
+                    nameAlert.style.color = "green";
+                }
+
+                if (name.length >= 2 && re.test(mail) === true && subject.length >= 5 && message.length >= 20) {
+                    alert("Form Submitted Successfully ✅");
+                    clearAll();
+                }
+            }
+
+        }
+
+        function clearAll() {
+            document.getElementById("name").value = "";
+            document.getElementById("mail").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+            document.getElementById("nameAlert").textContent = "";
+            document.getElementById("mailAlert").textContent = "";
+            document.getElementById("subjectAlert").textContent = "";
+            document.getElementById("messageAlert").textContent = "";
+        }
+    </script>
+</body>
+
+</html>
